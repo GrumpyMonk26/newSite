@@ -83,7 +83,7 @@ body {
   .card-background {
     background: #d3d3d3;
   }
-  
+
   /* Footer Section */
   @media (max-width: 750px) {
     .footer-font {
@@ -93,7 +93,8 @@ body {
   }
   
   footer {
-    padding: 5px 0;
+    padding: 20px 0 0 0;
+    margin: 10px 0 0 0;
   }
   footer a:hover {
     text-decoration: none;
@@ -109,6 +110,23 @@ body {
   
   .footerCards {
     padding-bottom: 80px;
+  }
+
+  .footer-font {
+    font-size: 14px; /* Consistent font size */
+    color: #333; /* Text color */
+    margin: 0; /* Remove default paragraph margin */
+  }
+  
+  .footer-link {
+    text-decoration: none; /* Remove link underline */
+    color: inherit; /* Ensure link color is inherited */
+  }
+  
+  .footer {
+    padding: 20px 0 0 0; /* Padding for vertical space */
+    background-color: #f8f9fa; /* Match Bootstrap light background */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
   /* Slick slider Section */
@@ -193,6 +211,22 @@ body {
     h3,
     h1 {
       font-size: 1.5rem !important;
+    }
+    .footerCards {
+      padding-bottom: 100px;
+      margin-bottom: 40px;
+    }
+    .profiles{
+      padding-bottom: 100px;
+      margin-bottom: 40px;
+    }
+    .dom-container{
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+    }
+    .bottom-space{
+      padding-bottom: 50px;
+      margin-bottom: 20px;
     }
   }
   
