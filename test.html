@@ -393,10 +393,10 @@
     </section>
 
     <!-- Footer Card Section -->
-        <section class="footerCards">
+    <section class="footerCards">
       <div class="container text-center mb-3">
         <div class="row">
-          <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <div class="card1">
               <h6 class="company pt-5">
                 ARRETA CARE LIMITED<br />
@@ -408,22 +408,28 @@
                 CQC Number i-7720997860
               </h6>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-md-3">
-            <div class="card2">
+            <div class="card1">
               <img src="img/cqc.jpg" alt="" />
             </div>
           </div>
 
           <div class="col-md-3">
-            <div class="card3">
+            <div class="card2">
               <img src="img/staffs-logo.png" alt="" />
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="card3">
+              <img src="img/CQC_Good_v2.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card4">
               <a
                 href="https://dbscheckonline.org.uk/verified?id=286470&token=420dfdb6c6143fdcd6af6531e6258d486b3c4045"
                 target="_blank"
@@ -438,15 +444,18 @@
         </div>
       </div>
     </section>
-<!-- 
-    <footer class="footer bg-light fixed-bottom">
+
+    <!-- <footer class="footer bg-light fixed-bottom">
+      <div>
       <a class="footer-link" href="https://www.jasonevans.dev/" target="_blank">
         <p class="text-center footer-font">
           Designed and Developed by www.jasonevans.dev Copyright&copy;
           <span id="year"></span>
         </p>
       </a>
+    </div>
     </footer> -->
+
     <footer class="footer bg-light fixed-bottom">
       <div class="container">
         <div class="row">
@@ -472,6 +481,7 @@
         </div>
       </div>
     </footer>
+    
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -495,6 +505,13 @@
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
 
+      // show footer only when scrolled to the bottom
+      if(scrollHeight - scrollPosition <=50){
+        $('.footer').fadeIn();
+      }else{
+        $('.footer').fadeOut();
+      }
+
       // Slick slider Carousel
       $('.slider').slick({
         slidesToShow: 1,
@@ -503,13 +520,6 @@
         autoplay: true,
         autoplaySpeed: 5000,
       });
-
-      // show footer only when scrolled to the bottom
-      if(scrollHeight - scrollPosition <=50){
-        $('.footer').fadeIn();
-      }else{
-        $('.footer').fadeOut();
-      }
     </script>
   </body>
 </html>
