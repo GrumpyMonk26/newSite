@@ -113,7 +113,7 @@ body {
   }
   
   .footerCards {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     margin bottom: 30px;
   }
 
@@ -220,7 +220,7 @@ body {
       font-size: 1.5rem !important;
     }
     .footerCards {
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       margin-bottom: 40px;
     }
     .profiles{
