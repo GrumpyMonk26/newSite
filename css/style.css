@@ -185,11 +185,13 @@ body {
 }
 
 ul.square li:before {
-    content: '✓ ';
-    color: #0d6916;
-    margin-right: 8px; /* Adds some space between the checkmark and the text */
-    font-size: 1.6rem;
-    line-height: 1.2rem; /* Adjusts the line height to make the checkmark appear aligned with the top of the text */
+  content: '✓ ';
+  color: #0d6916;
+  margin-right: 8px; /* Adds some space between the checkmark and the text */
+  font-size: 1.6rem;
+  line-height: 1.2rem; /* Adjusts the line height to make the checkmark appear aligned with the top of the text */
+  position: relative;
+  top: 2px; /* Move the checkmark down slightly */
 }
 
 ul.square {
