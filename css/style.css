@@ -168,7 +168,6 @@ body {
     margin: 0 10px;
   }
   
-  /* Domiciliary Section */
   ul.square li:before {
     content: '✓ ';
     color: #0d6916;
@@ -179,6 +178,25 @@ body {
     color: #043d92;
     font-size: 1.4rem;
   }
+
+  .square li {
+    display: flex;
+    align-items: center;
+}
+
+.square li p {
+    margin: 0;
+}
+
+.custom-section {
+  max-width: 700px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+/* Increase the line height for the text within the custom section */
+.custom-section h5 {
+  line-height: 1.5; 
+}
   
   .dom-care-image {
     font-size: 0.8rem;
