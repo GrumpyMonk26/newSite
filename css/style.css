@@ -168,7 +168,7 @@ body {
     margin: 0 10px;
   }
   
-  ul.square li:before {
+  /* ul.square li:before {
     content: '✓ ';
     color: #0d6916;
   }
@@ -177,7 +177,26 @@ body {
     list-style: none;
     color: #043d92;
     font-size: 1.4rem;
-  }
+  } */
+
+  ul.square li {
+    display: flex;
+    align-items: flex-start; /* Aligns the checkmark to the top */
+}
+
+ul.square li:before {
+    content: '✓ ';
+    color: #0d6916;
+    margin-right: 8px; /* Adds some space between the checkmark and the text */
+    font-size: 1.6rem;
+    line-height: 1.2rem; /* Adjusts the line height to make the checkmark appear aligned with the top of the text */
+}
+
+ul.square {
+    list-style: none;
+    color: #043d92;
+    font-size: 1.4rem;
+}
 
   .square li {
     display: flex;
